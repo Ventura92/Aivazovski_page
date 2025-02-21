@@ -1,5 +1,65 @@
-@media (max-width: 767px){
+@media (max-width:768px){
+  .about__description-ru,
+  .about__description-en{
+    text-align: center;
+}
+}
+
+@media (max-width: 480px){
   .menu{
     display: none;
+  }
+
+  .hero__wrapper{
+    align-items: flex-start;
+  }
+
+  .hero__title{
+    max-width: 260px;
+  }
+
+  .hero__title:not(:last-child){
+    font-size: clamp(18px,6.6vw,32px);
+    margin-bottom: 24px;
+  }
+
+  .hero__description:not(:last-child) {
+    font-size: clamp(12px,3vw,14px);
+    margin-bottom: 28px;
+  }
+
+  .history{
+    padding-top: 50px;
+  }
+
+  .history__title:not(:last-child){
+    margin-bottom: 46px;
+  }
+
+  .history__img:not(:last-child){
+    margin-bottom: 33px;
+  }
+
+  .contacts__title:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .contacts__button:not(:last-child){
+    margin-bottom: 40px;
+  }
+
+  .socials{
+    column-gap: 20px;
+  }
+
+  .socials:not(:last-child){
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 360px){
+  .socials{
+    flex-wrap: wrap;
+    column-gap: 15px;
   }
 }

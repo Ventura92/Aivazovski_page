@@ -1,0 +1,27 @@
+.history {
+  padding: 65px 0 70px;
+  text-align: center;
+}
+
+.history__title {
+  font-size: clamp(20px, 3.5vw, 34px);
+  font-weight: 700;
+}
+
+.history__title:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.history__img {
+  width: min(100%, 950px);
+  object-fit: cover;
+}
+
+.history__img:not(:last-child){
+  margin-bottom: 30px;
+}
+
+.history__description {
+  font-size: clamp(14px, 1.8vw, 18px);
+  font-weight: 500;
+}

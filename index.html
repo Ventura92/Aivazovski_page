@@ -1,41 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon/favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="index.css">
-  <title>57.Верстка макета</title>
-</head>
-<body>
-  <header class="header">
-    <div class="container">
-      <nav class="menu" aria-label="header navigation">
-        <ul class="menu__list list-style">
-          <li class="menu__item">
-            <a href="#!" class="menu__link menu__link--active" aria-label="link to home">Home</a>
-          </li>
-          <li class="menu__item">
-            <a href="#!" class="menu__link" aria-label="link to about">About</a>
-          </li>
-          <li class="menu__item">
-            <a href="#!" class="menu__link" aria-label="link to history">History</a>
-          </li>
-          <li class="menu__item">
-            <a href="#!" class="menu__link" aria-label="link to portfolio">Portfolio</a>
-          </li>
-          <li class="menu__item">
-            <a href="#!" class="menu__link" aria-label="link to contacts">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main class="main">
-
-  </main>
-  <footer class="footer">
-
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="index.css" />
+    <title>57.Верстка макета</title>
+  </head>
+  <body>
+    <header class="header" id="home-id">
+      <div class="container">
+        <nav class="menu" aria-label="header navigation">
+          <ul class="menu__list list-style">
+            <li class="menu__item">
+              <a href="#home-id" class="menu__link menu__link--active" aria-label="link to home">Home</a>
+            </li>
+            <li class="menu__item">
+              <a href="#about-id" class="menu__link" aria-label="link to about">About</a>
+            </li>
+            <li class="menu__item">
+              <a href="#history-id" class="menu__link" aria-label="link to history">History</a>
+            </li>
+            <li class="menu__item">
+              <a href="#portfolio-id" class="menu__link" aria-label="link to portfolio">Portfolio</a>
+            </li>
+            <li class="menu__item">
+              <a href="#contacts-id" class="menu__link" aria-label="link to contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main" aria-label="section hero">
+      <section class="hero" id="home-id">
+        <div class="container">
+          <div class="hero__wrapper">
+            <h1 class="hero__title" aria-label="title">
+              Ivan Constantinovich Aivazovski
+            </h1>
+            <p class="hero__description" aria-label="description">
+              Russian marine painter of Armenian origin, collector,
+              philanthropist
+            </p>
+            <img
+              src="img/Aivazovski-portret.webp"
+              class="hero__img"
+              alt="the picture of Aivazovski"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="about" aria-label="section about" id="about-id">
+        <div class="container">
+          <h2 class="about__title" aria-label="about title">
+            About of Aivazovski
+          </h2>
+          <h3 class="about__subtitle-ru" aria-label="about subtitle ru">
+            Ива&#769;н Константи&#769;нович Айвазо&#769;вский&nbsp;&mdash;
+            русский живописец-маринист армянского происхождения, коллекционер,
+            меценат.
+          </h3>
+          <p class="about__description-ru" aria-label="description ru">
+            Будучи художником с&nbsp;мировой известностью, Иван Константинович
+            Айвазовский предпочитал жить и&nbsp;работать на&nbsp;своей
+            родине&nbsp;&mdash; в&nbsp;Крыму. Айвазовский наиболее известен
+            своими морскими пейзажами, которые составляют больше половины его
+            работ. Художник считается одним из&nbsp;величайших маринистов всех
+            времён.
+          </p>
+          <h3 class="about__subtitle-en" aria-label="about subtitle en">
+            Ivan Konstantinovich Aivazovsky&nbsp;&mdash; Russian marine painter
+            of&nbsp;Armenian origin, collector, philanthropist.
+          </h3>
+          <p class="about__description-en" aria-label="description en">
+            Being a&nbsp;world famous artist, Ivan Konstantinovich Aivazovsky
+            preferred to&nbsp;live and work in&nbsp;his homeland&nbsp;&mdash;
+            in&nbsp;the Crimea. Aivazovsky is&nbsp;best known for his seascapes,
+            which make up&nbsp;more than half of&nbsp;his work. The artist
+            is&nbsp;considered one of&nbsp;the greatest marine painters
+            of&nbsp;all time.
+          </p>
+        </div>
+      </section>
+      <section class="history" aria-label="section history" id="history-id">
+        <div class="container">
+          <h2 class="history__title" aria-label="history title">History</h2>
+          <img
+            class="history__img"
+            src="img/the-house-of-Aivazovski.webp"
+            alt="the house where Aivazovski was born"
+          />
+          <p class="history__description" aria-label="history description">
+            Дом в котором родился Айвазовский | The house where Aivazovsky was
+            born
+          </p>
+        </div>
+      </section>
+      <section class="portfolio" aria-label="section portfolio" id="portfolio-id">
+        <div class="container">
+          <div class="portfolio__wrapper">
+            <h2 class="portfolio__title" aria-label="portfolio title">Portfolio</h2>
+            <ul class="portfolio__gallery">
+              <li class="portfolio__item">
+                <img class="portfolio__img" 
+                src="img/Winter_wagon_on_the_road_(painting_by_Ivan_Aivazovsky,1857).webp" alt="Winter wagon on the road by Aivazovski">
+                <p class="portfolio__description">Зимний обоз в пути, 1857 г. | Winter wagon train on the way, 1857</p>
+              </li>
+              <li class="portfolio__item">
+                <img class="portfolio__img" 
+                src="img/Aivazovsky_Rainbow_1873.webp" alt="Aivazovsky_Rainbow by Aivazovski">
+                <p class="portfolio__description">Радуга, 1873 г. | Rainbow, 1873</p>
+              </li>
+              <li class="portfolio__item">
+                <img class="portfolio__img" 
+                src="img/neapolitan_bay_morning_1893.webp" alt="neapolitan bay morning 1893 by Aivazovski">
+                <p class="portfolio__description">Неаполитанский залив утром, 1893 г. | Gulf of Naples in the morning, 1893</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+      <footer class="contacts" aria-label="section contacts" id="contacts-id">
+        <div class="container">
+          <h2 class="contacts__title" aria-label="contacts title">Contacts</h2>
+          <button class="contacts__button" type="button">
+            <a class="contacts__link" href="https://ayvazovskiy.su" target="_blank">ayvazovskiy.su</a>
+          </button>
+          <address class="socials" aria-label="socials icons">
+            <a href="#!" target="_blank" aria-label="link to youtube">
+              <svg class="socials__icon" aria-label="youtube-icon">
+                <use href="img/sprites.svg#youtube-icon"></use>
+              </svg>
+            </a>
+            <a href="#!" target="_blank" aria-label="link to linkedIn">
+              <svg class="socials__icon" aria-label="linkedin-icon">
+                <use href="img/sprites.svg#linked-icon"></use>
+              </svg>
+            </a>
+            <a href="#!" target="_blank" aria-label="link to instagram">
+              <svg class="socials__icon" aria-label="instagram-icon">
+                <use href="img/sprites.svg#instagram-icon"></use>
+              </svg>
+            </a>
+            <a href="#!" target="_blank" aria-label="link to facebook">
+              <svg class="socials__icon" aria-label="facebook-icon">
+                <use href="img/sprites.svg#facebook-icon"></use>
+              </svg>
+            </a>
+          </address>
+          <p class="contacts__extra" aria-label="extra-info">More works you can see in these social networks</p>
+        </div>
+      </footer>
+  </body>
 </html>
